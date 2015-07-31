@@ -39,5 +39,5 @@ install(FILES
     head.xml
     trim_tail.xml
     file_message_source.xml
-    DESTINATION share/gnuradio/grc/blocks
+    magsqrtime_plot.xml DESTINATION share/gnuradio/grc/blocks
 )

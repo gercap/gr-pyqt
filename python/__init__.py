@@ -69,6 +69,7 @@ from skip_head import *
 from head import *
 from trim_tail import *
 from file_message_source import *
+from magsqrtime_plot import *
 
 # ----------------------------------------------------------------
 # Tail of workaround

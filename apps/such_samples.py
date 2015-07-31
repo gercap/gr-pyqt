@@ -1,20 +1,10 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 ##################################################
-# GNU Radio Python Flow Graph
-# Title: Such Samples, /tmp/data.dat Wow!
+# Gnuradio Python Flow Graph
+# Title: Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!
 # Author: Tim O'Shea
-# Generated: Fri Jun  5 11:37:15 2015
+# Generated: Fri Jul 31 16:35:46 2015
 ##################################################
-
-if __name__ == '__main__':
-    import ctypes
-    import sys
-    if sys.platform.startswith('linux'):
-        try:
-            x11 = ctypes.cdll.LoadLibrary('libX11.so')
-            x11.XInitThreads()
-        except:
-            print "Warning: failed to XInitThreads()"
 
 from PyQt4 import Qt
 from gnuradio import eng_notation
@@ -29,10 +19,10 @@ import sys
 from distutils.version import StrictVersion
 class such_samples(gr.top_block, Qt.QWidget):
 
-    def __init__(self, filename="/tmp/data.dat"):
-        gr.top_block.__init__(self, "Such Samples, /tmp/data.dat Wow!")
+    def __init__(self, filename="/home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat"):
+        gr.top_block.__init__(self, "Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!")
         Qt.QWidget.__init__(self)
-        self.setWindowTitle("Such Samples, /tmp/data.dat Wow!")
+        self.setWindowTitle("Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!")
         try:
              self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
         except:
@@ -61,13 +51,16 @@ class such_samples(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
+        self.pyqt_time_plot_0 = pyqt.time_plot("")
+        self._pyqt_time_plot_0_win = self.pyqt_time_plot_0;
+        self.top_layout.addWidget(self._pyqt_time_plot_0_win)
         self.pyqt_range_input_0 = pyqt.range_input()
         self._pyqt_range_input_0_win = self.pyqt_range_input_0;
         self.top_layout.addWidget(self._pyqt_range_input_0_win)
+        self.pyqt_magsqrtime_plot_0 = pyqt.magsqrtime_plot("")
+        self._pyqt_magsqrtime_plot_0_win = self.pyqt_magsqrtime_plot_0;
+        self.top_layout.addWidget(self._pyqt_magsqrtime_plot_0_win)
         self.pyqt_file_message_souce_0 = pyqt.file_message_source(filename, "complex64")
-        self.pyqt_ctime_plot_0 = pyqt.ctime_plot("Much Time")
-        self._pyqt_ctime_plot_0_win = self.pyqt_ctime_plot_0;
-        self.top_layout.addWidget(self._pyqt_ctime_plot_0_win)
         self.pyqt_cpsd_plot_0 = pyqt.cpsd_plot("Very Frequency")
         self._pyqt_cpsd_plot_0_win = self.pyqt_cpsd_plot_0;
         self.top_layout.addWidget(self._pyqt_cpsd_plot_0_win)
@@ -76,8 +69,9 @@ class such_samples(gr.top_block, Qt.QWidget):
         # Connections
         ##################################################
         self.msg_connect((self.pyqt_file_message_souce_0, 'pdus'), (self.pyqt_cpsd_plot_0, 'cpdus'))    
-        self.msg_connect((self.pyqt_file_message_souce_0, 'pdus'), (self.pyqt_ctime_plot_0, 'cpdus'))    
+        self.msg_connect((self.pyqt_file_message_souce_0, 'pdus'), (self.pyqt_magsqrtime_plot_0, 'cpdus'))    
         self.msg_connect((self.pyqt_file_message_souce_0, 'file_range'), (self.pyqt_range_input_0, 'file_range'))    
+        self.msg_connect((self.pyqt_file_message_souce_0, 'pdus'), (self.pyqt_time_plot_0, 'pdus'))    
         self.msg_connect((self.pyqt_range_input_0, 'range'), (self.pyqt_file_message_souce_0, 'range'))    
 
     def closeEvent(self, event):
@@ -91,10 +85,17 @@ class such_samples(gr.top_block, Qt.QWidget):
     def set_filename(self, filename):
         self.filename = filename
 
-
 if __name__ == '__main__':
+    import ctypes
+    import sys
+    if sys.platform.startswith('linux'):
+        try:
+            x11 = ctypes.cdll.LoadLibrary('libX11.so')
+            x11.XInitThreads()
+        except:
+            print "Warning: failed to XInitThreads()"
     parser = OptionParser(option_class=eng_option, usage="%prog: [options]")
-    parser.add_option("", "--filename", dest="filename", type="string", default="/tmp/data.dat",
+    parser.add_option("", "--filename", dest="filename", type="string", default="/home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat",
         help="Set filename [default=%default]")
     (options, args) = parser.parse_args()
     if(StrictVersion(Qt.qVersion()) >= StrictVersion("4.5.0")):
