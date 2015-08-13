@@ -1,48 +1,53 @@
+<<<<<<< HEAD
 <?xml version='1.0' encoding='ASCII'?>
 <?grc format='1' created='3.7.6'?>
+=======
+<?xml version='1.0' encoding='utf-8'?>
+<?grc format='1' created='3.7.8'?>
+>>>>>>> upstream/master
 <flow_graph>
   <timestamp>Thu May 21 09:46:09 2015</timestamp>
   <block>
     <key>options</key>
     <param>
-      <key>id</key>
-      <value>such_samples</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>title</key>
-      <value>"Such Samples, %s Wow!"%(filename)</value>
-    </param>
-    <param>
       <key>author</key>
       <value>Tim O'Shea</value>
     </param>
     <param>
-      <key>description</key>
+      <key>alias</key>
       <value></value>
-    </param>
-    <param>
-      <key>window_size</key>
-      <value>1280, 1024</value>
-    </param>
-    <param>
-      <key>generate_options</key>
-      <value>qt_gui</value>
     </param>
     <param>
       <key>category</key>
       <value>Custom</value>
     </param>
     <param>
-      <key>run_options</key>
-      <value>prompt</value>
+      <key>comment</key>
+      <value></value>
     </param>
     <param>
-      <key>run</key>
+      <key>description</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
       <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(10, 10)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>generate_options</key>
+      <value>qt_gui</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>such_samples</value>
     </param>
     <param>
       <key>max_nouts</key>
@@ -53,19 +58,37 @@
       <value></value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>alias</key>
       <value></value>
     </param>
     <param>
       <key>_coordinate</key>
       <value>(10, 10)</value>
+=======
+      <key>run_options</key>
+      <value>prompt</value>
     </param>
     <param>
-      <key>_rotation</key>
-      <value>0</value>
+      <key>run</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>thread_safe_setters</key>
+      <value></value>
+    </param>
+    <param>
+      <key>title</key>
+      <value>"Such Samples, %s Wow!"%(filename)</value>
+>>>>>>> upstream/master
+    </param>
+    <param>
+      <key>window_size</key>
+      <value>1280, 1024</value>
     </param>
   </block>
   <block>
+<<<<<<< HEAD
     <key>import</key>
     <param>
       <key>id</key>
@@ -78,31 +101,65 @@
     <param>
       <key>import</key>
       <value>import numpy</value>
-    </param>
+=======
+    <key>variable_qtgui_range</key>
     <param>
-      <key>alias</key>
+      <key>comment</key>
       <value></value>
     </param>
     <param>
-      <key>_coordinate</key>
-      <value>(16, 230)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>pyqt_ctime_plot</key>
-    <param>
-      <key>id</key>
-      <value>pyqt_ctime_plot_0_0</value>
+      <key>value</key>
+      <value>10</value>
     </param>
     <param>
       <key>_enabled</key>
       <value>False</value>
     </param>
     <param>
+      <key>_coordinate</key>
+      <value>(432, 592)</value>
+>>>>>>> upstream/master
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+    </param>
+    <param>
+<<<<<<< HEAD
+      <key>_coordinate</key>
+      <value>(16, 230)</value>
+=======
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>d</value>
+>>>>>>> upstream/master
+    </param>
+    <param>
+      <key>label</key>
+      <value></value>
+    </param>
+<<<<<<< HEAD
+  </block>
+  <block>
+    <key>pyqt_ctime_plot</key>
+    <param>
+      <key>id</key>
+      <value>pyqt_ctime_plot_0_0</value>
+=======
+    <param>
+      <key>min_len</key>
+      <value>200</value>
+>>>>>>> upstream/master
+    </param>
+    <param>
+      <key>orient</key>
+      <value>Qt.Horizontal</value>
+    </param>
+    <param>
+<<<<<<< HEAD
       <key>gui_hint</key>
       <value></value>
     </param>
@@ -121,13 +178,30 @@
     <param>
       <key>_coordinate</key>
       <value>(864, 430)</value>
+=======
+      <key>start</key>
+      <value>0</value>
     </param>
     <param>
-      <key>_rotation</key>
-      <value>0</value>
+      <key>step</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>stop</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>rangeType</key>
+      <value>float</value>
+>>>>>>> upstream/master
+    </param>
+    <param>
+      <key>widget</key>
+      <value>counter_slider</value>
     </param>
   </block>
   <block>
+<<<<<<< HEAD
     <key>pyqt_text_input</key>
     <param>
       <key>id</key>
@@ -140,12 +214,27 @@
     <param>
       <key>gui_hint</key>
       <value></value>
-    </param>
+=======
+    <key>variable_pyqt_text_input</key>
     <param>
-      <key>alias</key>
+      <key>comment</key>
       <value></value>
     </param>
     <param>
+      <key>value</key>
+      <value>lambda x: numpy.correlate(numpy.abs(x), numpy.abs(x), 'same')</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>False</value>
+>>>>>>> upstream/master
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(856, 500)</value>
+    </param>
+    <param>
+<<<<<<< HEAD
       <key>affinity</key>
       <value></value>
     </param>
@@ -168,10 +257,20 @@
   </block>
   <block>
     <key>variable_pyqt_text_input</key>
+=======
+      <key>gui_hint</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+>>>>>>> upstream/master
     <param>
       <key>id</key>
       <value>f2</value>
     </param>
+<<<<<<< HEAD
     <param>
       <key>_enabled</key>
       <value>False</value>
@@ -179,23 +278,45 @@
     <param>
       <key>value</key>
       <value>lambda x: numpy.correlate(numpy.abs(x), numpy.abs(x), 'same')</value>
+=======
+  </block>
+  <block>
+    <key>blocks_message_debug</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>gui_hint</key>
       <value></value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>alias</key>
       <value></value>
     </param>
     <param>
       <key>_coordinate</key>
       <value>(856, 500)</value>
+=======
+      <key>_enabled</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(864, 10)</value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
+<<<<<<< HEAD
   </block>
   <block>
     <key>pyqt_range_input</key>
@@ -211,15 +332,25 @@
       <key>gui_hint</key>
       <value></value>
     </param>
+=======
+    <param>
+      <key>id</key>
+      <value>blocks_message_debug_0</value>
+    </param>
+  </block>
+  <block>
+    <key>parameter</key>
+>>>>>>> upstream/master
     <param>
       <key>alias</key>
       <value></value>
     </param>
     <param>
-      <key>affinity</key>
+      <key>comment</key>
       <value></value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>minoutbuf</key>
       <value>0</value>
     </param>
@@ -230,23 +361,38 @@
     <param>
       <key>_coordinate</key>
       <value>(376, 96)</value>
+=======
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(8, 130)</value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_rotation</key>
       <value>180</value>
     </param>
+<<<<<<< HEAD
   </block>
   <block>
     <key>pyqt_pdu_lambda</key>
     <param>
       <key>id</key>
       <value>pyqt_pdu_lambda_0_0</value>
+=======
+    <param>
+      <key>id</key>
+      <value>filename</value>
+>>>>>>> upstream/master
     </param>
     <param>
-      <key>_enabled</key>
-      <value>False</value>
+      <key>label</key>
+      <value></value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>fn</key>
       <value>lambda x: numpy.log(1e-3+numpy.abs(x[0::d]))</value>
     </param>
@@ -257,7 +403,53 @@
     <param>
       <key>affinity</key>
       <value></value>
+=======
+      <key>short_id</key>
+      <value></value>
     </param>
+    <param>
+      <key>type</key>
+      <value>string</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>/tmp/data</value>
+    </param>
+  </block>
+  <block>
+    <key>import</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(16, 230)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>import_0</value>
+    </param>
+    <param>
+      <key>import</key>
+      <value>import numpy</value>
+>>>>>>> upstream/master
+    </param>
+  </block>
+  <block>
+    <key>pyqt_cpower_plot</key>
     <param>
       <key>minoutbuf</key>
       <value>0</value>
@@ -267,13 +459,30 @@
       <value>0</value>
     </param>
     <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>False</value>
+    </param>
+    <param>
       <key>_coordinate</key>
+<<<<<<< HEAD
       <value>(232, 507)</value>
+=======
+      <value>(864, 358)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
+<<<<<<< HEAD
   </block>
   <block>
     <key>pyqt_pdu_lambda</key>
@@ -284,56 +493,30 @@
     <param>
       <key>_enabled</key>
       <value>False</value>
-    </param>
-    <param>
-      <key>fn</key>
-      <value>f2</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(256, 435)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>pyqt_cpower_plot</key>
+=======
     <param>
       <key>id</key>
       <value>pyqt_cpower_plot_0</value>
     </param>
     <param>
-      <key>_enabled</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value></value>
-    </param>
-    <param>
       <key>l</key>
       <value>Many Power</value>
+>>>>>>> upstream/master
+    </param>
+  </block>
+  <block>
+    <key>pyqt_cpsd_plot</key>
+    <param>
+<<<<<<< HEAD
+      <key>fn</key>
+      <value>f2</value>
+=======
+      <key>alias</key>
+      <value></value>
+>>>>>>> upstream/master
     </param>
     <param>
-      <key>alias</key>
+      <key>comment</key>
       <value></value>
     </param>
     <param>
@@ -341,26 +524,98 @@
       <value></value>
     </param>
     <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
       <key>_coordinate</key>
-      <value>(864, 379)</value>
+<<<<<<< HEAD
+      <value>(256, 435)</value>
+=======
+      <value>(864, 286)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
+    <param>
+      <key>id</key>
+      <value>pyqt_cpsd_plot_0</value>
+    </param>
+    <param>
+      <key>l</key>
+      <value>Very Frequency</value>
+    </param>
+  </block>
+  <block>
+    <key>pyqt_ctime_plot</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+<<<<<<< HEAD
+      <key>_coordinate</key>
+      <value>(864, 379)</value>
+=======
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(864, 214)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+>>>>>>> upstream/master
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+<<<<<<< HEAD
   </block>
   <block>
     <key>blocks_message_debug</key>
     <param>
       <key>id</key>
       <value>blocks_message_debug_0</value>
+=======
+    <param>
+      <key>id</key>
+      <value>pyqt_ctime_plot_0</value>
+>>>>>>> upstream/master
     </param>
     <param>
-      <key>_enabled</key>
-      <value>False</value>
+      <key>l</key>
+      <value>Much Time</value>
     </param>
+  </block>
+  <block>
+    <key>pyqt_ctime_plot</key>
     <param>
       <key>alias</key>
+<<<<<<< HEAD
+=======
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+>>>>>>> upstream/master
       <value></value>
     </param>
     <param>
@@ -368,13 +623,27 @@
       <value></value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>_coordinate</key>
       <value>(816, 8)</value>
+=======
+      <key>_enabled</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(864, 430)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value></value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
+<<<<<<< HEAD
   </block>
   <block>
     <key>variable_qtgui_range</key>
@@ -389,20 +658,42 @@
     <param>
       <key>label</key>
       <value></value>
+=======
+    <param>
+      <key>id</key>
+      <value>pyqt_ctime_plot_0_0</value>
     </param>
     <param>
+      <key>l</key>
+      <value>Very Correlate</value>
+>>>>>>> upstream/master
+    </param>
+  </block>
+  <block>
+    <key>pyqt_file_message_souce</key>
+    <param>
+<<<<<<< HEAD
       <key>value</key>
       <value>10</value>
     </param>
     <param>
       <key>start</key>
       <value>0</value>
+=======
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>stop</key>
       <value>100</value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>step</key>
       <value>1</value>
     </param>
@@ -425,6 +716,18 @@
     <param>
       <key>alias</key>
       <value></value>
+=======
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>filetype</key>
+      <value>"complex64"</value>
+    </param>
+    <param>
+      <key>filename</key>
+      <value>filename</value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_coordinate</key>
@@ -434,6 +737,7 @@
       <key>_rotation</key>
       <value>0</value>
     </param>
+<<<<<<< HEAD
   </block>
   <block>
     <key>pyqt_magsqrtime_plot</key>
@@ -444,17 +748,33 @@
     <param>
       <key>_enabled</key>
       <value>True</value>
+=======
+    <param>
+      <key>id</key>
+      <value>pyqt_file_message_souce_0</value>
     </param>
     <param>
-      <key>gui_hint</key>
-      <value></value>
+      <key>maxoutbuf</key>
+      <value>0</value>
+>>>>>>> upstream/master
     </param>
     <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>pyqt_pdu_lambda</key>
+    <param>
+<<<<<<< HEAD
       <key>l</key>
+=======
+      <key>alias</key>
+>>>>>>> upstream/master
       <value></value>
     </param>
     <param>
-      <key>alias</key>
+      <key>comment</key>
       <value></value>
     </param>
     <param>
@@ -462,23 +782,39 @@
       <value></value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>_coordinate</key>
       <value>(816, 323)</value>
+=======
+      <key>_enabled</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(472, 430)</value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
+<<<<<<< HEAD
   </block>
   <block>
     <key>blocks_pdu_to_tagged_stream</key>
+=======
+>>>>>>> upstream/master
     <param>
       <key>id</key>
       <value>blocks_pdu_to_tagged_stream_1</value>
     </param>
     <param>
-      <key>_enabled</key>
-      <value>False</value>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
     </param>
     <param>
       <key>type</key>
@@ -488,8 +824,15 @@
       <key>tag</key>
       <value>packet_len</value>
     </param>
+  </block>
+  <block>
+    <key>pyqt_pdu_lambda</key>
     <param>
       <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
       <value></value>
     </param>
     <param>
@@ -497,40 +840,59 @@
       <value></value>
     </param>
     <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
+<<<<<<< HEAD
+      <key>_coordinate</key>
+      <value>(600, 579)</value>
+=======
+      <key>_enabled</key>
+      <value>False</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(600, 579)</value>
+      <value>(448, 502)</value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
+<<<<<<< HEAD
   </block>
   <block>
     <key>qtgui_time_sink_x</key>
     <param>
       <key>id</key>
       <value>qtgui_time_sink_x_0</value>
+=======
+    <param>
+      <key>id</key>
+      <value>pyqt_pdu_lambda_0_0</value>
+>>>>>>> upstream/master
     </param>
     <param>
-      <key>_enabled</key>
-      <value>False</value>
+      <key>maxoutbuf</key>
+      <value>0</value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>type</key>
       <value>complex</value>
     </param>
     <param>
       <key>name</key>
       <value>""</value>
+=======
+      <key>minoutbuf</key>
+      <value>0</value>
     </param>
+    <param>
+      <key>fn</key>
+      <value>lambda x: numpy.log(1e-3+numpy.abs(x[0::d]))</value>
+>>>>>>> upstream/master
+    </param>
+  </block>
+  <block>
+    <key>pyqt_range_input</key>
     <param>
       <key>ylabel</key>
       <value>Amplitude</value>
@@ -540,6 +902,7 @@
       <value>""</value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>size</key>
       <value>4096</value>
     </param>
@@ -848,10 +1211,13 @@
       <value></value>
     </param>
     <param>
+=======
+>>>>>>> upstream/master
       <key>affinity</key>
       <value></value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>_coordinate</key>
       <value>(896, 571)</value>
     </param>
@@ -949,10 +1315,13 @@
       <value>pyqt_cpsd_plot_0</value>
     </param>
     <param>
+=======
+>>>>>>> upstream/master
       <key>_enabled</key>
       <value>True</value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>gui_hint</key>
       <value></value>
     </param>
@@ -986,10 +1355,15 @@
     <param>
       <key>_enabled</key>
       <value>False</value>
+=======
+      <key>_coordinate</key>
+      <value>(424, 24)</value>
+>>>>>>> upstream/master
     </param>
     <param>
       <key>gui_hint</key>
       <value></value>
+<<<<<<< HEAD
     </param>
     <param>
       <key>l</key>
@@ -1088,14 +1462,29 @@
     <param>
       <key>_coordinate</key>
       <value>(344, 212)</value>
+=======
+>>>>>>> upstream/master
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
+    <param>
+      <key>id</key>
+      <value>pyqt_range_input_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
   </block>
   <connection>
     <source_block_id>pyqt_file_message_souce_0</source_block_id>
+<<<<<<< HEAD
     <sink_block_id>pyqt_cpower_plot_0</sink_block_id>
     <source_key>pdus</source_key>
     <sink_key>cpdus</sink_key>
@@ -1111,24 +1500,35 @@
     <sink_block_id>blocks_message_debug_0</sink_block_id>
     <source_key>range</source_key>
     <sink_key>print</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>pyqt_file_message_souce_0</source_block_id>
-    <sink_block_id>pyqt_ctime_plot_0</sink_block_id>
-    <source_key>pdus</source_key>
-    <sink_key>cpdus</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>pyqt_range_input_0</source_block_id>
-    <sink_block_id>pyqt_file_message_souce_0</sink_block_id>
-    <source_key>range</source_key>
-    <sink_key>range</sink_key>
+=======
+    <sink_block_id>blocks_message_debug_0</sink_block_id>
+    <source_key>file_range</source_key>
+    <sink_key>print</sink_key>
   </connection>
   <connection>
     <source_block_id>pyqt_file_message_souce_0</source_block_id>
     <sink_block_id>pyqt_range_input_0</sink_block_id>
     <source_key>file_range</source_key>
     <sink_key>file_range</sink_key>
+>>>>>>> upstream/master
+  </connection>
+  <connection>
+    <source_block_id>pyqt_file_message_souce_0</source_block_id>
+    <sink_block_id>pyqt_cpower_plot_0</sink_block_id>
+    <source_key>pdus</source_key>
+    <sink_key>cpdus</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>pyqt_file_message_souce_0</source_block_id>
+    <sink_block_id>pyqt_cpsd_plot_0</sink_block_id>
+    <source_key>pdus</source_key>
+    <sink_key>cpdus</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>pyqt_file_message_souce_0</source_block_id>
+    <sink_block_id>pyqt_ctime_plot_0</sink_block_id>
+    <source_key>pdus</source_key>
+    <sink_key>cpdus</sink_key>
   </connection>
   <connection>
     <source_block_id>pyqt_pdu_lambda_0</source_block_id>
@@ -1161,6 +1561,7 @@
     <sink_key>cpdus</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>blocks_pdu_to_tagged_stream_1</source_block_id>
     <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
     <source_key>0</source_key>
@@ -1171,5 +1572,17 @@
     <sink_block_id>pyqt_time_plot_0</sink_block_id>
     <source_key>pdus</source_key>
     <sink_key>pdus</sink_key>
+=======
+    <source_block_id>pyqt_range_input_0</source_block_id>
+    <sink_block_id>blocks_message_debug_0</sink_block_id>
+    <source_key>range</source_key>
+    <sink_key>print</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>pyqt_range_input_0</source_block_id>
+    <sink_block_id>pyqt_file_message_souce_0</sink_block_id>
+    <source_key>range</source_key>
+    <sink_key>range</sink_key>
+>>>>>>> upstream/master
   </connection>
 </flow_graph>

@@ -1,9 +1,16 @@
 #!/usr/bin/env python
 ##################################################
+<<<<<<< HEAD
 # Gnuradio Python Flow Graph
 # Title: Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!
 # Author: Tim O'Shea
 # Generated: Fri Jul 31 16:35:46 2015
+=======
+# GNU Radio Python Flow Graph
+# Title: Such Samples, /tmp/data Wow!
+# Author: Tim O'Shea
+# Generated: Mon Aug 10 18:28:56 2015
+>>>>>>> upstream/master
 ##################################################
 
 from PyQt4 import Qt
@@ -19,10 +26,17 @@ import sys
 from distutils.version import StrictVersion
 class such_samples(gr.top_block, Qt.QWidget):
 
+<<<<<<< HEAD
     def __init__(self, filename="/home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat"):
         gr.top_block.__init__(self, "Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!")
         Qt.QWidget.__init__(self)
         self.setWindowTitle("Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!")
+=======
+    def __init__(self, filename="/tmp/data"):
+        gr.top_block.__init__(self, "Such Samples, /tmp/data Wow!")
+        Qt.QWidget.__init__(self)
+        self.setWindowTitle("Such Samples, /tmp/data Wow!")
+>>>>>>> upstream/master
         try:
              self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
         except:
@@ -95,7 +109,11 @@ if __name__ == '__main__':
         except:
             print "Warning: failed to XInitThreads()"
     parser = OptionParser(option_class=eng_option, usage="%prog: [options]")
+<<<<<<< HEAD
     parser.add_option("", "--filename", dest="filename", type="string", default="/home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat",
+=======
+    parser.add_option("", "--filename", dest="filename", type="string", default="/tmp/data",
+>>>>>>> upstream/master
         help="Set filename [default=%default]")
     (options, args) = parser.parse_args()
     if(StrictVersion(Qt.qVersion()) >= StrictVersion("4.5.0")):
