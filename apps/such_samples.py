@@ -1,19 +1,13 @@
 #!/usr/bin/env python
 ##################################################
-<<<<<<< HEAD
 # Gnuradio Python Flow Graph
-# Title: Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!
+# Title: Such Samples, /home/ggc/rf_recordings/umts/umts6.4M.cfile Wow!
 # Author: Tim O'Shea
-# Generated: Fri Jul 31 16:35:46 2015
-=======
-# GNU Radio Python Flow Graph
-# Title: Such Samples, /tmp/data Wow!
-# Author: Tim O'Shea
-# Generated: Mon Aug 10 18:28:56 2015
->>>>>>> upstream/master
+# Generated: Fri Aug 14 01:05:26 2015
 ##################################################
 
 from PyQt4 import Qt
+from gnuradio import blocks
 from gnuradio import eng_notation
 from gnuradio import gr
 from gnuradio.eng_option import eng_option
@@ -26,17 +20,10 @@ import sys
 from distutils.version import StrictVersion
 class such_samples(gr.top_block, Qt.QWidget):
 
-<<<<<<< HEAD
-    def __init__(self, filename="/home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat"):
-        gr.top_block.__init__(self, "Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!")
+    def __init__(self, filename="/home/ggc/rf_recordings/umts/umts6.4M.cfile"):
+        gr.top_block.__init__(self, "Such Samples, /home/ggc/rf_recordings/umts/umts6.4M.cfile Wow!")
         Qt.QWidget.__init__(self)
-        self.setWindowTitle("Such Samples, /home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat Wow!")
-=======
-    def __init__(self, filename="/tmp/data"):
-        gr.top_block.__init__(self, "Such Samples, /tmp/data Wow!")
-        Qt.QWidget.__init__(self)
-        self.setWindowTitle("Such Samples, /tmp/data Wow!")
->>>>>>> upstream/master
+        self.setWindowTitle("Such Samples, /home/ggc/rf_recordings/umts/umts6.4M.cfile Wow!")
         try:
              self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
         except:
@@ -65,27 +52,26 @@ class such_samples(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-        self.pyqt_time_plot_0 = pyqt.time_plot("")
-        self._pyqt_time_plot_0_win = self.pyqt_time_plot_0;
-        self.top_layout.addWidget(self._pyqt_time_plot_0_win)
         self.pyqt_range_input_0 = pyqt.range_input()
         self._pyqt_range_input_0_win = self.pyqt_range_input_0;
         self.top_layout.addWidget(self._pyqt_range_input_0_win)
-        self.pyqt_magsqrtime_plot_0 = pyqt.magsqrtime_plot("")
-        self._pyqt_magsqrtime_plot_0_win = self.pyqt_magsqrtime_plot_0;
-        self.top_layout.addWidget(self._pyqt_magsqrtime_plot_0_win)
         self.pyqt_file_message_souce_0 = pyqt.file_message_source(filename, "complex64")
         self.pyqt_cpsd_plot_0 = pyqt.cpsd_plot("Very Frequency")
         self._pyqt_cpsd_plot_0_win = self.pyqt_cpsd_plot_0;
         self.top_layout.addWidget(self._pyqt_cpsd_plot_0_win)
+        self.fac_plot_0 = pyqt.fac_plot(label="", obs_time=400e-6)
+        self._fac_plot_0_win = self.fac_plot_0;
+        self.top_layout.addWidget(self._fac_plot_0_win)
+        self.blocks_message_debug_0 = blocks.message_debug()
 
         ##################################################
         # Connections
         ##################################################
+        self.msg_connect((self.pyqt_file_message_souce_0, 'pdus'), (self.fac_plot_0, 'cpdus'))    
         self.msg_connect((self.pyqt_file_message_souce_0, 'pdus'), (self.pyqt_cpsd_plot_0, 'cpdus'))    
-        self.msg_connect((self.pyqt_file_message_souce_0, 'pdus'), (self.pyqt_magsqrtime_plot_0, 'cpdus'))    
         self.msg_connect((self.pyqt_file_message_souce_0, 'file_range'), (self.pyqt_range_input_0, 'file_range'))    
-        self.msg_connect((self.pyqt_file_message_souce_0, 'pdus'), (self.pyqt_time_plot_0, 'pdus'))    
+        self.msg_connect((self.pyqt_range_input_0, 'range'), (self.blocks_message_debug_0, 'print'))    
+        self.msg_connect((self.pyqt_range_input_0, 'range'), (self.fac_plot_0, 'range'))    
         self.msg_connect((self.pyqt_range_input_0, 'range'), (self.pyqt_file_message_souce_0, 'range'))    
 
     def closeEvent(self, event):
@@ -109,11 +95,7 @@ if __name__ == '__main__':
         except:
             print "Warning: failed to XInitThreads()"
     parser = OptionParser(option_class=eng_option, usage="%prog: [options]")
-<<<<<<< HEAD
-    parser.add_option("", "--filename", dest="filename", type="string", default="/home/ggc/Dropbox/gnuradio/code/ofdm/logs_sample_stream/useful/ofdm_tx_bench_bin_cancel2.dat",
-=======
-    parser.add_option("", "--filename", dest="filename", type="string", default="/tmp/data",
->>>>>>> upstream/master
+    parser.add_option("", "--filename", dest="filename", type="string", default="/home/ggc/rf_recordings/umts/umts6.4M.cfile",
         help="Set filename [default=%default]")
     (options, args) = parser.parse_args()
     if(StrictVersion(Qt.qVersion()) >= StrictVersion("4.5.0")):

@@ -70,6 +70,7 @@ from head import *
 from trim_tail import *
 from file_message_source import *
 from magsqrtime_plot import *
+from fac_plot import *
 
 # ----------------------------------------------------------------
 # Tail of workaround

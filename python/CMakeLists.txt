@@ -53,7 +53,8 @@ GR_PYTHON_INSTALL(
     skip_head.py
     trim_tail.py
     file_message_source.py
-    magsqrtime_plot.py DESTINATION ${GR_PYTHON_DIR}/pyqt
+    magsqrtime_plot.py
+    fac_plot.py DESTINATION ${GR_PYTHON_DIR}/pyqt
 )
 
 ########################################################################

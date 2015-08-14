@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<block>
+  <name>Fast Autocorrelation Plot</name>
+  <key>fac_plot</key>
+  <category>pyqt</category>
+  <import>import pyqt</import>
+  <make>#set $win = 'self._%s_win'%$id
+pyqt.fac_plot(label=$label, obs_time=$obs_time)
+self._$(id)_win = self.$(id);
+$(gui_hint()($win))
+</make>
+<callback>set_obs_time($obs_time)</callback>
+
+  <param>
+    <name>GUI Hint</name>
+    <key>gui_hint</key>
+    <value></value>
+    <type>gui_hint</type>
+    <hide>part</hide>
+  </param>
+
+  <param>
+    <name>Label</name>
+    <key>label</key>
+    <value></value>
+    <type>string</type>
+  </param>
+
+  <param>
+    <name>Observ. period</name>
+    <key>obs_time</key>
+    <value></value>
+    <type>float</type>
+  </param>
+
+  <sink>
+    <name>cpdus</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+
+  <sink>
+    <name>range</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+
+</block>
