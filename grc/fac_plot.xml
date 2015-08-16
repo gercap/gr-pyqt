@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <block>
-  <name>Fast Autocorrelation Plot</name>
-  <key>fac_plot</key>
+  <name>PyQT Fast Autocorrelation Plot</name>
+  <key>pyqt_fac_plot</key>
   <category>pyqt</category>
   <import>import pyqt</import>
   <make>#set $win = 'self._%s_win'%$id
@@ -45,4 +45,9 @@ $(gui_hint()($win))
     <optional>1</optional>
   </sink>
 
+<doc>
+  X axis of autocorrelation is half of the observation period
+  block_length = int(sample_rate*2*observation_period)
+  adjust block_length in "Range Input" block accordingly in order to get an accurate X time scale
+</doc>
 </block>

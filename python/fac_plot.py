@@ -38,7 +38,7 @@ class fac_plot(plotter_base):
 
         self.block_length = 4096
         self.obs_time = obs_time
-        self.tbase = numpy.linspace(0, self.obs_time/2.0, self.block_length/2)*1000
+        self.tbase = numpy.linspace(0, self.obs_time/2.0, self.block_length/2)
 
         # set up curve
         curve = Qwt.QwtPlotCurve("FAC");
@@ -62,7 +62,7 @@ class fac_plot(plotter_base):
     def range_received(self, msg):
         (s,l) = pmt.to_python(msg)
         self.block_length = l
-        self.tbase = numpy.linspace(0, self.obs_time/2.0, self.block_length/2)*1000
+        self.tbase = numpy.linspace(0, self.obs_time/2.0, self.block_length/2)
 
     def set_obs_time(self, obs_time):
         self.obs_time = obs_time
