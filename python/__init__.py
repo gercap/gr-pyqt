@@ -71,6 +71,8 @@ from trim_tail import *
 from file_message_source import *
 from magsqrtime_plot import *
 from fac_plot import *
+from remote_client_qt import remote_client_qt
+
 
 # ----------------------------------------------------------------
 # Tail of workaround

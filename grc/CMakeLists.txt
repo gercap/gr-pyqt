@@ -16,7 +16,6 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
     pdu_lambda.xml
     stream_lambda.xml
@@ -40,5 +39,6 @@ install(FILES
     trim_tail.xml
     file_message_source.xml
     magsqrtime_plot.xml 
-    fac_plot.xml DESTINATION share/gnuradio/grc/blocks
+    fac_plot.xml
+    pyqt_remote_client_qt.xml DESTINATION share/gnuradio/grc/blocks
 )
